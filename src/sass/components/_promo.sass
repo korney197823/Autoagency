@@ -1,0 +1,24 @@
+.promo
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  background-image: url('../images/bg1.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+
+.promo__title
+  @include grid-column
+  margin-bottom: $vertical-gutter
+  text-transform: uppercase
+  color: $promo-color
+
+.promo__text
+  @include grid-column
+  margin-bottom: $vertical-gutter * 2
+  font-weight: 700
+  color: $promo-color
+
+.btn__promo
+  @include grid-column
+

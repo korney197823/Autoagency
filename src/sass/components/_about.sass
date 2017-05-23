@@ -1,0 +1,21 @@
+.about
+  padding-top: $vertical-gutter * 9
+.about__img-wrap
+  @include grid-column()
+  @include grid-column-position(center)
+  @include breakpoint(medium)
+    @include grid-column(50%)
+    @include grid-column-position(center)
+
+.about-content
+  @include grid-column()
+.about__title
+  margin:
+    top: $vertical-gutter * 2
+    bottom: $vertical-gutter
+  text-transform: uppercase
+.about__text
+  &--bold
+    font-weight: bold
+  &--small
+    font-size: $small-text-size

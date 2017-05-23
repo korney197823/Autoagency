@@ -1,0 +1,40 @@
+.certificate__img-wrap
+  @include grid-column()
+
+
+
+.certificate__img
+  display: none
+
+.certificate-content
+  @include grid-column()
+
+.certificate-content__title
+  margin:
+    top: $vertical-gutter
+    bottom: $vertical-gutter
+  text-transform: uppercase
+
+.certificate-content__list
+  margin-left: 0
+  list-style-type: none
+  font-size: $small-text-size
+
+.certificate-content__item
+  position: relative
+  padding-left: rem-calc(25)
+  &:before
+    position: absolute
+    content: ''
+    width: rem-calc(16)
+    height: rem-calc(8)
+    left: 0
+    top: rem-calc(6)
+    border-left: 3px solid $certificate-content__item-border-color
+    border-bottom: 3px solid$certificate-content__item-border-color
+    transform: rotate(-45deg)
+
+.certificate-content__note
+  padding-left: rem-calc(25)
+  color: $medium-gray
+

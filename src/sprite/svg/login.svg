@@ -1,0 +1,24 @@
+<svg width="25" height="26" viewBox="0 0 25 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>login</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-998 3085)">
+<g id="login">
+<g id="login">
+<g id="Capa_1">
+<g id="Group">
+<g id="Shape">
+<use xlink:href="#path0_fill" transform="translate(999.287 -3077.79)" fill="#FFFFFF"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path1_fill" transform="translate(1003.33 -3084.4)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 11.3116 1.08389L 12.3632 0L 17.8912 5.6712L 12.3632 11.3119L 11.3116 10.2913L 15.0987 6.4062L 0 6.4062L 0 4.946L 15.0987 4.946L 11.3116 1.08389Z"/>
+<path id="path1_fill" d="M 1.58194 7.79394L 2.66454e-14 7.79394L 0 0L 19.0771 0L 19.0771 24.5429L 0 24.5429L 0 16.699L 1.58194 16.699L 1.58194 22.9976L 17.5451 22.9976L 17.5451 1.49528L 1.58194 1.49528L 1.58194 7.79394Z"/>
+</defs>
+</svg>
