@@ -1,13 +1,18 @@
+.certificate
+  @include breakpoint(medium)
+    display: flex
+
+
 .certificate__img-wrap
-  @include grid-column()
-
-
+  @include grid-column-gutter()
 
 .certificate__img
   display: none
+  @include breakpoint(medium)
+    display: block
 
 .certificate-content
-  @include grid-column()
+  @include grid-column-gutter()
 
 .certificate-content__title
   margin:
@@ -33,6 +38,10 @@
     border-left: 3px solid $certificate-content__item-border-color
     border-bottom: 3px solid$certificate-content__item-border-color
     transform: rotate(-45deg)
+  @include breakpoint(medium)
+    margin-bottom: $vertical-gutter
+  @include breakpoint(xxlarge)
+    font-size: $certificate-content__item-font-size
 
 .certificate-content__note
   padding-left: rem-calc(25)

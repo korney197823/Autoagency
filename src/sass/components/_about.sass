@@ -1,14 +1,32 @@
 .about
   padding-top: $vertical-gutter * 9
+  .row
+    display: flex
+    flex-direction: column
+    @include breakpoint(xxlarge)
+      flex-direction: row
+      flex-wrap: wrap
+
 .about__img-wrap
-  @include grid-column()
-  @include grid-column-position(center)
+  @include grid-column-gutter()
+  margin: 0 auto
   @include breakpoint(medium)
-    @include grid-column(50%)
-    @include grid-column-position(center)
+    width: 49%
+  @include breakpoint(xxlarge)
+    width: 40%
+    min-height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    order: 1
+
+.about-content__wrap
+  @include breakpoint(xxlarge)
+    width: 60%
 
 .about-content
-  @include grid-column()
+  @include grid-column-gutter()
+
 .about__title
   margin:
     top: $vertical-gutter * 2
@@ -17,5 +35,9 @@
 .about__text
   &--bold
     font-weight: bold
+    @include breakpoint(medium)
+      font-size: $about-text-size-xxlarge-big
   &--small
     font-size: $small-text-size
+    @include breakpoint(medium)
+      font-size: $about-text-size-xxlarge
