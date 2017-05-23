@@ -36,3 +36,4 @@
 
 // Other vendor
 //= ../../bower_components/promise-polyfill/promise.min.js
+//= ../../bower_components/slick-carousel/slick/slick.min.js
