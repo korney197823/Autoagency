@@ -1,4 +1,33 @@
+.clients
+  padding:
+    top: $vertical-gutter * 2
+    bottom: $vertical-gutter * 2
+
 .clients__title
   @include grid-col-gutter()
+  margin:
+    bottom: $vertical-gutter * 2
   text-transform: uppercase
   text-align: center
+
+.clients-slider__item
+  display: flex
+  flex-wrap: wrap
+  height: 250px
+  overflow: hidden
+  @include breakpoint(medium)
+    height: 400px
+
+.clients-slider__img-wrap
+  @include grid-col-gutter()
+  display: flex
+  justify-content: center
+  align-self: center
+  width: 50%
+  margin:
+    bottom: $vertical-gutter * 2
+  @include breakpoint(medium)
+    width: 33%
+
+.clients-slider__img
+  display: block

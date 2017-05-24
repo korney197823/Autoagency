@@ -1,12 +1,14 @@
 .header
-  @include grid-row()
   position: fixed
   top: 0
   left: 0
   width: 100%
   max-width: 100%
+  padding-top: $vertical-gutter
+  padding-bottom: $vertical-gutter
+
+.header__wrap
+  @include grid-row()
   display: flex
   justify-content: space-between
   align-items: center
-  padding-top: $vertical-gutter
-  padding-bottom: $vertical-gutter

@@ -1,7 +1,8 @@
 header.header
-  include menu
-  .logo
-    img.logo__img(src="images/logo_2.png" width="69" height="57")
-    //svg(width="69" height="57")
-    //  use(xlink:href='#svg-icon-logo_2')
-  include user
+  .header__wrap.row
+    include menu
+    .logo
+      img.logo__img(src="images/logo_2.png" width="69" height="57")
+      //svg(width="69" height="57")
+      //  use(xlink:href='#svg-icon-logo_2')
+    include user

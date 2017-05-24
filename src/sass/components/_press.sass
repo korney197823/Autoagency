@@ -1,0 +1,27 @@
+.press
+  padding:
+    top: $vertical-gutter * 2
+
+.press__title
+  text-align: center
+  text-transform: uppercase
+.press__list
+  list-style-type: none
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  margin: 0
+
+.press__item
+  display: flex
+  flex-direction: column
+  align-self: center
+  padding:
+    top: $vertical-gutter
+    bottom: $vertical-gutter
+  &:not(:first-of-type)
+    margin:
+      left: rem-calc(40)
+    @include breakpoint(medium)
+      margin:
+        left: rem-calc(80)
