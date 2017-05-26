@@ -1,5 +1,45 @@
 .checks
+  padding:
+    top: $vertical-gutter * 2
+    bottom: $vertical-gutter * 2
   background:
     image: linear-gradient(123.69deg, rgba(78, 92, 191, 0.804489) -18.15%, rgba(118, 91, 167, 0.79713) 77.55%), url('/../images/bg4.jpg')
     repeat: no-repeat
     size: cover
+  color: $checks-text-color
+  @include breakpoint(medium)
+    padding:
+      top: $vertical-gutter * 13
+
+.checks__title
+  margin:
+    bottom: $vertical-gutter * 2
+  text-transform: uppercase
+  text-align: center
+  font-weight: $global-weight-teen
+
+.checks__slide
+  display: flex
+  flex-wrap: wrap
+  height: rem-calc(370)
+  overflow: hidden
+  @include breakpoint(medium)
+    width: 60%
+    margin: 0 auto
+  @include breakpoint(xlarge)
+    width: 72.5%
+
+.checks__item
+  @include grid-column()
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  align-items: center
+  width: 50%
+  min-height: rem-calc(130)
+  font-size: $checks_item-text-size
+  @include breakpoint(medium)
+    width: 33%
+
+.checks__text
+  text-align: center
